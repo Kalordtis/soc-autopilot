@@ -1,0 +1,344 @@
+[
+ {
+  "createdDateTime": "2026-10-09T08:28:00Z",
+  "userPrincipalName": "alex.kim@contoso.example",
+  "ipAddress": "192.0.2.10",
+  "appDisplayName": "Office 365",
+  "status": {
+   "errorCode": 0
+  },
+  "mfaResult": "approved",
+  "location": {
+   "city": "Raleigh",
+   "countryOrRegion": "US",
+   "geoCoordinates": {
+    "latitude": 35.78,
+    "longitude": -78.64
+   }
+  }
+ },
+ {
+  "createdDateTime": "2026-10-09T09:15:00Z",
+  "userPrincipalName": "alex.kim@contoso.example",
+  "ipAddress": "192.0.2.10",
+  "appDisplayName": "Office 365",
+  "status": {
+   "errorCode": 0
+  },
+  "mfaResult": "approved",
+  "location": {
+   "city": "Raleigh",
+   "countryOrRegion": "US",
+   "geoCoordinates": {
+    "latitude": 35.78,
+    "longitude": -78.64
+   }
+  }
+ },
+ {
+  "createdDateTime": "2026-10-09T10:04:00Z",
+  "userPrincipalName": "maria.g@contoso.example",
+  "ipAddress": "192.0.2.10",
+  "appDisplayName": "Office 365",
+  "status": {
+   "errorCode": 0
+  },
+  "mfaResult": "approved",
+  "location": {
+   "city": "Raleigh",
+   "countryOrRegion": "US",
+   "geoCoordinates": {
+    "latitude": 35.78,
+    "longitude": -78.64
+   }
+  }
+ },
+ {
+  "createdDateTime": "2026-10-09T11:01:00Z",
+  "userPrincipalName": "alex.kim@contoso.example",
+  "ipAddress": "192.0.2.10",
+  "appDisplayName": "Office 365",
+  "status": {
+   "errorCode": 0
+  },
+  "mfaResult": "approved",
+  "location": {
+   "city": "Raleigh",
+   "countryOrRegion": "US",
+   "geoCoordinates": {
+    "latitude": 35.78,
+    "longitude": -78.64
+   }
+  }
+ },
+ {
+  "createdDateTime": "2026-10-09T12:37:00Z",
+  "userPrincipalName": "alex.kim@contoso.example",
+  "ipAddress": "192.0.2.10",
+  "appDisplayName": "Office 365",
+  "status": {
+   "errorCode": 0
+  },
+  "mfaResult": "approved",
+  "location": {
+   "city": "Raleigh",
+   "countryOrRegion": "US",
+   "geoCoordinates": {
+    "latitude": 35.78,
+    "longitude": -78.64
+   }
+  }
+ },
+ {
+  "createdDateTime": "2026-10-09T13:00:00Z",
+  "userPrincipalName": "alex.kim@contoso.example",
+  "ipAddress": "192.0.2.10",
+  "appDisplayName": "Office 365",
+  "status": {
+   "errorCode": 0
+  },
+  "mfaResult": "approved",
+  "location": {
+   "city": "Raleigh",
+   "countryOrRegion": "US",
+   "geoCoordinates": {
+    "latitude": 35.78,
+    "longitude": -78.64
+   }
+  }
+ },
+ {
+  "createdDateTime": "2026-10-09T13:05:00Z",
+  "userPrincipalName": "jordan.lee@contoso.example",
+  "ipAddress": "192.0.2.10",
+  "appDisplayName": "Office 365",
+  "status": {
+   "errorCode": 0
+  },
+  "mfaResult": "approved",
+  "location": {
+   "city": "Raleigh",
+   "countryOrRegion": "US",
+   "geoCoordinates": {
+    "latitude": 35.78,
+    "longitude": -78.64
+   }
+  }
+ },
+ {
+  "createdDateTime": "2026-10-09T14:01:00Z",
+  "userPrincipalName": "jordan.lee@contoso.example",
+  "ipAddress": "198.51.100.77",
+  "appDisplayName": "Office 365",
+  "status": {
+   "errorCode": 50126
+  },
+  "mfaResult": "denied",
+  "location": {
+   "city": "Amsterdam",
+   "countryOrRegion": "NL",
+   "geoCoordinates": {
+    "latitude": 52.37,
+    "longitude": 4.9
+   }
+  }
+ },
+ {
+  "createdDateTime": "2026-10-09T14:04:00Z",
+  "userPrincipalName": "jordan.lee@contoso.example",
+  "ipAddress": "198.51.100.77",
+  "appDisplayName": "Office 365",
+  "status": {
+   "errorCode": 50126
+  },
+  "mfaResult": "denied",
+  "location": {
+   "city": "Amsterdam",
+   "countryOrRegion": "NL",
+   "geoCoordinates": {
+    "latitude": 52.37,
+    "longitude": 4.9
+   }
+  }
+ },
+ {
+  "createdDateTime": "2026-10-09T14:05:00Z",
+  "userPrincipalName": "jordan.lee@contoso.example",
+  "ipAddress": "198.51.100.77",
+  "appDisplayName": "Office 365",
+  "status": {
+   "errorCode": 50126
+  },
+  "mfaResult": "denied",
+  "location": {
+   "city": "Amsterdam",
+   "countryOrRegion": "NL",
+   "geoCoordinates": {
+    "latitude": 52.37,
+    "longitude": 4.9
+   }
+  }
+ },
+ {
+  "createdDateTime": "2026-10-09T14:07:00Z",
+  "userPrincipalName": "jordan.lee@contoso.example",
+  "ipAddress": "198.51.100.77",
+  "appDisplayName": "Office 365",
+  "status": {
+   "errorCode": 50126
+  },
+  "mfaResult": "denied",
+  "location": {
+   "city": "Amsterdam",
+   "countryOrRegion": "NL",
+   "geoCoordinates": {
+    "latitude": 52.37,
+    "longitude": 4.9
+   }
+  }
+ },
+ {
+  "createdDateTime": "2026-10-09T14:10:00Z",
+  "userPrincipalName": "jordan.lee@contoso.example",
+  "ipAddress": "198.51.100.77",
+  "appDisplayName": "Office 365",
+  "status": {
+   "errorCode": 50126
+  },
+  "mfaResult": "denied",
+  "location": {
+   "city": "Amsterdam",
+   "countryOrRegion": "NL",
+   "geoCoordinates": {
+    "latitude": 52.37,
+    "longitude": 4.9
+   }
+  }
+ },
+ {
+  "createdDateTime": "2026-10-09T14:12:00Z",
+  "userPrincipalName": "jordan.lee@contoso.example",
+  "ipAddress": "198.51.100.77",
+  "appDisplayName": "Office 365",
+  "status": {
+   "errorCode": 50126
+  },
+  "mfaResult": "denied",
+  "location": {
+   "city": "Amsterdam",
+   "countryOrRegion": "NL",
+   "geoCoordinates": {
+    "latitude": 52.37,
+    "longitude": 4.9
+   }
+  }
+ },
+ {
+  "createdDateTime": "2026-10-09T14:14:00Z",
+  "userPrincipalName": "jordan.lee@contoso.example",
+  "ipAddress": "198.51.100.77",
+  "appDisplayName": "Office 365",
+  "status": {
+   "errorCode": 0
+  },
+  "mfaResult": "approved",
+  "location": {
+   "city": "Amsterdam",
+   "countryOrRegion": "NL",
+   "geoCoordinates": {
+    "latitude": 52.37,
+    "longitude": 4.9
+   }
+  }
+ },
+ {
+  "createdDateTime": "2026-10-09T14:45:00Z",
+  "userPrincipalName": "alex.kim@contoso.example",
+  "ipAddress": "192.0.2.10",
+  "appDisplayName": "Office 365",
+  "status": {
+   "errorCode": 0
+  },
+  "mfaResult": "approved",
+  "location": {
+   "city": "Raleigh",
+   "countryOrRegion": "US",
+   "geoCoordinates": {
+    "latitude": 35.78,
+    "longitude": -78.64
+   }
+  }
+ },
+ {
+  "createdDateTime": "2026-10-09T15:14:00Z",
+  "userPrincipalName": "alex.kim@contoso.example",
+  "ipAddress": "192.0.2.10",
+  "appDisplayName": "Office 365",
+  "status": {
+   "errorCode": 0
+  },
+  "mfaResult": "approved",
+  "location": {
+   "city": "Raleigh",
+   "countryOrRegion": "US",
+   "geoCoordinates": {
+    "latitude": 35.78,
+    "longitude": -78.64
+   }
+  }
+ },
+ {
+  "createdDateTime": "2026-10-09T16:57:00Z",
+  "userPrincipalName": "alex.kim@contoso.example",
+  "ipAddress": "192.0.2.10",
+  "appDisplayName": "Office 365",
+  "status": {
+   "errorCode": 0
+  },
+  "mfaResult": "approved",
+  "location": {
+   "city": "Raleigh",
+   "countryOrRegion": "US",
+   "geoCoordinates": {
+    "latitude": 35.78,
+    "longitude": -78.64
+   }
+  }
+ },
+ {
+  "createdDateTime": "2026-10-09T17:55:00Z",
+  "userPrincipalName": "maria.g@contoso.example",
+  "ipAddress": "192.0.2.10",
+  "appDisplayName": "Office 365",
+  "status": {
+   "errorCode": 0
+  },
+  "mfaResult": "approved",
+  "location": {
+   "city": "Raleigh",
+   "countryOrRegion": "US",
+   "geoCoordinates": {
+    "latitude": 35.78,
+    "longitude": -78.64
+   }
+  }
+ },
+ {
+  "createdDateTime": "2026-10-09T19:00:00Z",
+  "userPrincipalName": "alex.kim@contoso.example",
+  "ipAddress": "192.0.2.88",
+  "appDisplayName": "Office 365",
+  "status": {
+   "errorCode": 0
+  },
+  "mfaResult": "approved",
+  "location": {
+   "city": "Charlotte",
+   "countryOrRegion": "US",
+   "geoCoordinates": {
+    "latitude": 35.23,
+    "longitude": -80.84
+   }
+  }
+ }
+]

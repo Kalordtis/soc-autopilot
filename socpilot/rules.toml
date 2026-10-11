@@ -1,0 +1,98 @@
+# Detection-as-code: every rule is data, reviewed in Git like any other code.
+# `type` picks the detection logic in detections.py; the rest are its tunables.
+# `actions` is the response playbook attached to every alert the rule fires.
+
+[settings]
+privileged_users = ["administrator", "root", "svc_backup", "it.admin@contoso.example"]
+privileged_groups = ["Administrators", "Domain Admins", "Enterprise Admins"]
+
+[[rule]]
+id = "AUTH-001"
+type = "brute_force"
+title = "Brute-force login attempts from a single IP"
+severity = "medium"
+mitre = ["T1110.001"]
+threshold = 8            # failures
+window_minutes = 10
+description = "Many failed logins from one source IP against the same account in a short window."
+actions = [
+  "Block the source IP at the perimeter firewall / WAF",
+  "Confirm the targeted account was not subsequently accessed",
+  "If the account is real, force a password reset and verify MFA is enrolled",
+]
+
+[[rule]]
+id = "AUTH-002"
+type = "password_spray"
+title = "Password spray across many accounts"
+severity = "high"
+mitre = ["T1110.003"]
+distinct_users = 5
+window_minutes = 15
+description = "One source IP failing logins against many different usernames: the classic spray pattern."
+actions = [
+  "Block the source IP and search for the same IP across all auth sources",
+  "Pull the list of targeted accounts and check each for a later successful login",
+  "Review lockout policy and Smart Lockout settings",
+]
+
+[[rule]]
+id = "AUTH-003"
+type = "success_after_failures"
+title = "Successful login after repeated failures"
+severity = "critical"
+mitre = ["T1110", "T1078"]
+min_failures = 5
+window_minutes = 30
+description = "A source IP that was guessing passwords eventually got in. Treat as a likely compromised account."
+actions = [
+  "Disable the account or revoke all active sessions immediately",
+  "Isolate the host the account logged into",
+  "Collect the host's process, network and persistence artifacts for triage",
+  "Reset the credential and rotate any secrets the account could reach",
+  "Open a P1 incident and notify the IR lead",
+]
+
+[[rule]]
+id = "IAM-001"
+type = "mfa_fatigue"
+title = "MFA fatigue / push bombing"
+severity = "high"
+mitre = ["T1621"]
+min_denials = 4
+window_minutes = 20
+description = "A burst of denied MFA prompts for one user, often followed by an approval the user did not intend."
+actions = [
+  "Contact the user out-of-band to confirm whether they approved the prompt",
+  "If any approval followed the denials, revoke sessions and reset the password",
+  "Switch the user to number matching / phishing-resistant MFA (FIDO2)",
+]
+
+[[rule]]
+id = "IAM-002"
+type = "impossible_travel"
+title = "Impossible travel between sign-ins"
+severity = "high"
+mitre = ["T1078.004"]
+max_kmh = 900            # faster than a commercial flight = suspicious
+min_km = 500             # ignore small jumps (VPN egress, IP geolocation noise)
+description = "Two successful sign-ins by the same user from locations too far apart for the time between them."
+actions = [
+  "Check whether either location is a known corporate VPN / proxy egress",
+  "Ask the user to confirm both sign-ins",
+  "If unconfirmed, revoke refresh tokens and require re-registration of MFA",
+]
+
+[[rule]]
+id = "PRIV-001"
+type = "new_privileged_account"
+title = "New account added to a privileged group"
+severity = "high"
+mitre = ["T1136.001", "T1098"]
+window_minutes = 60
+description = "A freshly created account was placed in an admin group: a common persistence technique."
+actions = [
+  "Verify against change tickets that this account creation was approved",
+  "If not approved, disable the account and remove it from the group",
+  "Investigate the account that performed the creation (added_by)",
+]

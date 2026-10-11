@@ -1,0 +1,13 @@
+asset,hostname,cve,title,cvss,internet_facing,asset_criticality,first_detected
+A-100,web01,CVE-2021-44228,Apache Log4j2 JNDI RCE (Log4Shell),10.0,true,3,2026-09-21
+A-101,vpn-gw01,CVE-2023-4966,Citrix NetScaler session token leak (Citrix Bleed),9.4,true,3,2026-10-08
+A-102,fw-edge01,CVE-2024-3400,PAN-OS GlobalProtect command injection,10.0,true,3,2026-10-09
+A-103,files01,CVE-2023-34362,MOVEit Transfer SQL injection,9.8,true,2,2026-09-26
+A-104,app02,CVE-2022-22965,Spring Framework RCE (Spring4Shell),9.8,false,2,2026-09-01
+A-105,rds01,CVE-2019-0708,Remote Desktop Services RCE (BlueKeep),9.8,false,2,2026-07-28
+A-106,web01,CVE-2021-3156,sudo heap overflow (Baron Samedit),7.8,false,3,2026-10-01
+A-107,lb01,CVE-2023-44487,HTTP/2 Rapid Reset DoS,7.5,true,2,2026-09-11
+A-108,build01,CVE-2023-38545,curl SOCKS5 heap overflow,9.8,false,1,2026-09-29
+A-109,hr-laptop-17,CVE-2023-36884,Office and Windows HTML RCE,8.8,false,1,2026-10-06
+A-110,dev-vm-03,CVE-2022-0778,OpenSSL BN_mod_sqrt infinite loop,7.5,false,1,2026-07-03
+A-111,db01,CVE-2024-6387,OpenSSH regreSSHion race condition RCE,8.1,false,3,2026-09-16

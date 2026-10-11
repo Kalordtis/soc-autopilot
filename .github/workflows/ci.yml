@@ -1,0 +1,24 @@
+name: ci
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install pytest
+      - run: python scripts/generate_sample_data.py
+      - run: pytest -q
+      - name: Run pipeline on sample data
+        run: python -m socpilot run --data data/sample --out out --today 2026-10-11
+      - uses: actions/upload-artifact@v4
+        if: matrix.python-version == '3.13'
+        with:
+          name: socpilot-report
+          path: out/

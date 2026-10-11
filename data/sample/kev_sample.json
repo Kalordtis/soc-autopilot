@@ -1,0 +1,50 @@
+{
+ "title": "CISA KEV (sample subset)",
+ "vulnerabilities": [
+  {
+   "cveID": "CVE-2021-44228",
+   "dateAdded": "2021-12-10",
+   "knownRansomwareCampaignUse": "Known"
+  },
+  {
+   "cveID": "CVE-2023-4966",
+   "dateAdded": "2023-10-18",
+   "knownRansomwareCampaignUse": "Known"
+  },
+  {
+   "cveID": "CVE-2024-3400",
+   "dateAdded": "2024-04-12",
+   "knownRansomwareCampaignUse": "Unknown"
+  },
+  {
+   "cveID": "CVE-2023-34362",
+   "dateAdded": "2023-06-02",
+   "knownRansomwareCampaignUse": "Known"
+  },
+  {
+   "cveID": "CVE-2022-22965",
+   "dateAdded": "2022-04-04",
+   "knownRansomwareCampaignUse": "Unknown"
+  },
+  {
+   "cveID": "CVE-2019-0708",
+   "dateAdded": "2021-11-03",
+   "knownRansomwareCampaignUse": "Unknown"
+  },
+  {
+   "cveID": "CVE-2021-3156",
+   "dateAdded": "2022-04-06",
+   "knownRansomwareCampaignUse": "Unknown"
+  },
+  {
+   "cveID": "CVE-2023-44487",
+   "dateAdded": "2023-10-10",
+   "knownRansomwareCampaignUse": "Unknown"
+  },
+  {
+   "cveID": "CVE-2023-36884",
+   "dateAdded": "2023-07-17",
+   "knownRansomwareCampaignUse": "Unknown"
+  }
+ ]
+}

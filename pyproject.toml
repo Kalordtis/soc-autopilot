@@ -1,0 +1,22 @@
+[project]
+name = "soc-autopilot"
+version = "0.1.0"
+description = "Detection-as-code, automated incident triage and risk-based vulnerability prioritization"
+requires-python = ">=3.11"
+dependencies = []            # standard library only
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+socpilot = "socpilot.cli:main"
+
+[tool.setuptools]
+packages = ["socpilot"]
+
+[tool.setuptools.package-data]
+socpilot = ["rules.toml"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

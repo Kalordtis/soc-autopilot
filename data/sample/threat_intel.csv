@@ -1,0 +1,5 @@
+indicator,type,confidence,source,tags
+203.0.113.45,ip,90,Internal honeypot + AbuseIPDB (sample),"ssh-bruteforce, botnet"
+198.51.100.77,ip,70,Phishing-infra feed (sample),"adversary-in-the-middle, mfa-phishing"
+198.51.100.23,ip,85,GreyNoise (sample),rdp-scanner
+192.0.2.250,ip,40,OSINT (sample),tor-exit
